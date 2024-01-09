@@ -1,0 +1,33 @@
+{
+  "name": "munasarapp",
+  "version": "16.5.0",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.1",
+    "tzdata": "^1.0.38"
+  },
+  "keywords": [],
+  "author": "Munasar abuukar",
+  "license": "ISC",
+  "description": "Api is the only one",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
